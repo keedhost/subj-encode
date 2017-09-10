@@ -11,6 +11,7 @@ Decoded header: Activate user account
 Decoding pipe-forwarded string:
 ```
 root@~/ # exim -Mvh 1dr7zE-000725-53 | grep "Subject:" | awk '{print $3}' | xargs subj-decoder
+Decoded header: Activate user account
 ```
 Also you can convert many strings:
 ```
