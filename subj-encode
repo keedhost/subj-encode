@@ -1,0 +1,25 @@
+#!/usr/bin/env python3
+
+"""
+Litle application for decode mail subjects
+Author: Andriy Kondratyev
+"""
+
+from email.header import decode_header as decode
+from sys import argv #, version_info
+
+def decode_header(text):
+	txt = decode(text)
+	decoded_txt = txt[0][0]
+	encoding = txt[0][1]
+	final = decoded_txt.decode(encoding, "strict")
+	return(final)
+
+if len(argv) == 1:
+	print("No arguments given. Exiting")
+else:
+	for i in range(1, len(argv)):
+		print("Decoded header: " +  decode_header(argv[i]))
+
+# str example 1 = '=?UTF-8?Q?dodz1r?='
+# str example 2 = '=?iso-8859-1?q?p=F6stal?='
