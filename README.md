@@ -20,6 +20,7 @@ Decoded header: dodz1r
 Decoded header: pöstal
 Decoded header: RE: professional hanger manufacturer
 ```
+![Usage example](https://raw.githubusercontent.com/keedhost/subj-encode/master/img.JPG)
 
 ## Support and propositions
 [Write me on Telegram](https://t.me/kondraryev1488)
